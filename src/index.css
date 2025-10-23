@@ -1,0 +1,84 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* All Items */
+*{
+  /* padding: 0; */
+  /* margin: 0; */
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* body  */
+body{
+  min-height: 200vh;
+}
+
+/* All link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width : 765px) {
+  .app{
+    width: 80%;
+    margin: auto;
+  }
+  
+}
+
+
+li{
+  cursor: pointer;
+}
+
+/* Tailwind */
+@import "tailwindcss";
+
+@theme{
+ --color-primary: #49557e;
+ --color-tomato: #ff6347;
+ --color-offwite: #fff4f2;
+ --color-btn: #747474;
+
+ --animate-fadeIn: fade_in  3s ;
+}
+
+@layer{
+  .navbar-active{
+    @apply pb-0.5 border-b-1 border-primary;
+  }
+  .scrollbar-hidden::-webkit-scrollbar{
+    display: none;
+  }
+  .input-field{
+    @apply outline-none border-1 border-[#c9c9c9] p-2.5 rounded;
+  }
+  .form-span{
+    @apply text-tomato cursor-pointer font-semibold;
+  }
+
+  .cart-items-title{
+    @apply grid grid-cols-7 sm:grid-cols-6 gap-3 sm:gap-0 items-center text-sm md:text-2xl;
+  }
+  .cart-total-details{
+    @apply flex justify-between text-[#555]
+  }
+  .order-input{
+    @apply mb-3.5 w-full p-2.5 border-1 border-[#c5c5c5] rounded outline-tomato
+  }
+
+  .multi-fileds{
+    @apply flex gap-2.5 
+  }
+}
+
+@keyframes fade_in {
+  0%{
+    opacity: 00;
+  }
+  100% {
+    opacity: 1;
+  }
+}
