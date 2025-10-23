@@ -58,7 +58,7 @@ function Cart() {
             <button onClick = {()=> navigate('/order')} className="text-white active:bg-tomato/90 bg-tomato cursor-pointer w-50 md:w-[15vw] py-3 rounded text-sm" >PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode flex-1 ">
-          <div>
+          <div className="mt-5 mb-10 md:my-0">
             <p className="text-[#555]">If you have a promo code, Enter it here</p>
             <div className="cart-promocode-input mt-2.5 flex justify-between items-center px-2 bg-[#eaeaea] rounded">
               <input className="bg-transparent border-none outline-none pe-2.5" type="text" placeholder="Promo Code" />
